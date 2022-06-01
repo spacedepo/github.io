@@ -1,0 +1,43 @@
+1) Посмотреть где я. === pwd 
+2) Создать папку === mkdir MainFolder
+3) Зайти в папку ==== cd MainFolder
+4) Cоздать три папки === mkdir f1 f2 f3
+5) Зайти в папку === cd f1
+6) Создать 5 файлов === touch first.txt second.txt third.txt j_file_1.json j_file_2.json
+7) Создать 3 папки === mkdir mama papa ya
+8) Вывести список содержимого папки === ls -la
+9) Открыть текстовый файл === vim first.txt
+10) Нажимаем I и вводим текст
+11) Сохранить и выйти === :wq
+12) Выйти из папки на уровень выше === cd ../
+--------------
+*Зайти в папку f1*
+13) Перенести 2 файла в другую папку mv j_file_1.json second.txt ../f2
+14) Сопировать 2 файла  в другую папку === cp j_file_2.json third.txt ../f2
+15) Найти файл по имени === find -type f -name "second.txt*"
+16) Посмотреть содержимое в реальном времени === tail -f first.txt 
+    Посмотреть с фильтром в реальном времен === tail -f first.txt | grep Hello!
+17) Вывести несколько первых строк текст.файла === head -3 first.txt
+18) Вывести несколько последних строк текст.файла === tail -3 first.txt
+19) Просмотреть содержимое длинного файла === less first.txt
+20) Вывести дату и время === date
+==============
+Задание *
+1) curl http://162.55.220.72:5005/terminal-hw-request
+   curl "http://162.55.220.72:5005/get_method?name=(Evgeniy)&age=(26)"
+======================
+
+2) 
+#!/bin/bash 
+ vim scr
+	mkdir 123             
+	cd /c/1/123
+	mkdir f1 f2 f3
+	cd f3
+	 touch 1.txt 2.txt 3.txt 4.json 5.json
+	 mkdir one two three four five	
+	 ls -la
+	 mv 1.txt 4.json one
+  chmod ugo+x scr
+  ./scr
+==========================
